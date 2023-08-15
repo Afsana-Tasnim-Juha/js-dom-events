@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summary</title>
+</head>
+
+<body>
+    <h1>Final dom event handlers</h1>
+    <h3 id="handler-status">Handle status</h3>
+
+    <button onclick="makeBlue()">make blue</button>
+    <button id="make-Red">new Handle status </button>
+
+
+    <script>
+        function makeBlue() {
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = 'NEW';
+
+        }
+
+        document.getElementById('make-Red').addEventListener('click', function () {
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = 'newnew';
+
+        })
+
+
+    </script>
+
+
+
+</body>
+
+</html>
